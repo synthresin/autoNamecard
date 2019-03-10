@@ -3,15 +3,16 @@
 Illustrator API 와 Selenium 을 사용하여 명함 AI 파일 생성 및 인쇄소 장바구니에 파일을 업로드하는 과정까지를 자동화 합니다. 결제과정은 포함되지 않습니다.
 
 ## 요구 사항
-
+- NodeJS 환경
+- Adobe Illustrator CC
+- Apple SD Gothic Neo
+- Helvetica Neue
 - 완전한 실행을 위해선 명함통(http://mhtong.co.kr) ID와 비밀번호를 만든 후, `src/uploadSingleAi.js`에서, id 와 비밀번호를 변경해 주어야 합니다.
 
 ```javascript
 await driver.findElement(By.name('id')).sendKeys('쇼핑몰 아이디');
 await driver.findElement(By.name('pw')).sendKeys('쇼핑몰 비밀번호');
 ```
-
-- 일러스트레이터 CC가 설치되어있어야 합니다.
 
 ## 실행
 
